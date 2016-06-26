@@ -1929,12 +1929,13 @@ otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
 bacon: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(FH_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(FH_TARGET_PACKAGE) > $(FH_TARGET_PACKAGE).md5sum
-        @echo -e ${CL_RED}""${CL_RED}
+	@echo -e ${CL_RED}""${CL_RED}
 	@echo -e ${CL_RED}"++++++++++++++++++++++++++++++++++++++++++++++++++++"${CL_RED}
-	@echo -e ${CL_RED}"      Fire Is Burning And Phoenix Are Hounding      "${CL_RED}
-	@echo -e ${CL_RED}"      Now Flash The Ashesh And Have Phun      "${CL_RED}
+	@echo -e ${CL_RED}"        Fire Is Burning And Phoenix Are Hounding        "${CL_RED}
+	@echo -e ${CL_RED}"        Now Flash The Ashesh And Have Phun        "${CL_RED}
 	@echo -e ${CL_RED}"++++++++++++++++++++++++++++++++++++++++++++++++++++"${CL_RED}
 	@echo -e ${CL_RED}""${CL_RED}
+fh: otapackage
 	@echo -e ${CL_CYN}"Package Complete: $(FH_TARGET_PACKAGE)"${CL_RST}
 
 # -----------------------------------------------------------------
