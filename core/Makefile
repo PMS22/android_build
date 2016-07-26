@@ -1932,7 +1932,7 @@ bacon: otapackage
 	@echo -e ${CL_RED}""${CL_RED}
 	@echo -e ${CL_RED}"++++++++++++++++++++++++++++++++++++++++++++++++++++"${CL_RED}
 	@echo -e ${CL_RED}"        Fire Is Burning And Phoenix Are Hounding        "${CL_RED}
-	@echo -e ${CL_RED}"        Now Flash The Ashesh And Have Phun        "${CL_RED}
+	@echo -e ${CL_RED}"          Now Flash The Ashesh And Have Phun        "${CL_RED}
 	@echo -e ${CL_RED}"++++++++++++++++++++++++++++++++++++++++++++++++++++"${CL_RED}
 	@echo -e ${CL_RED}""${CL_RED}
 fh: otapackage
