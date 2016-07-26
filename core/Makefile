@@ -950,8 +950,8 @@ ifneq ($(OTA_PACKAGE_SIGNING_KEY),)
     PRODUCT_EXTRA_RECOVERY_KEYS := $(DEFAULT_SYSTEM_DEV_CERTIFICATE)
 else
     PRODUCT_EXTRA_RECOVERY_KEYS += \
-        build/target/product/security/cm \
-        build/target/product/security/cm-devkey
+        build/target/product/security/fh \
+        build/target/product/security/fh-devkey
 endif
 
 # Generate a file containing the keys that will be read by the
@@ -1922,7 +1922,7 @@ $(INTERNAL_OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) $(DISTTOOLS)
 	   $(if $(OEM_OTA_CONFIG), -o $(OEM_OTA_CONFIG)) \
 	   $(BUILT_TARGET_FILES_PACKAGE) $@
 
-FH_TARGET_PACKAGE := $(PRODUCT_OUT)/FireHound-BurntAss-$(FH_VERSION).zip
+FH_TARGET_PACKAGE := $(PRODUCT_OUT)/$(FH_VERSION).zip
 
 .PHONY: otapackage bacon
 otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
