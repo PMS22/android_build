@@ -1498,6 +1498,14 @@ class BlockDifference(object):
     if not self.src:
       # write the output unconditionally
       script.Print("Patching %s image unconditionally..." % (self.partition,))
+      script.Print("Fire Burns and Phoenix Hounds");
+      script.Print(" _____ _          _   _                       _ ");
+      script.Print("|  ___(_)_ __ ___| | | | ___  _   _ _ __   __| |");
+      script.Print("| |_  | | '__/ _ \ |_| |/ _ \| | | | '_ \ / _` |");
+      script.Print("|  _| | | | |  __/  _  | (_) | |_| | | | | (_| |");
+      script.Print("|_|   |_|_|  \___|_| |_|\___/ \__,_|_| |_|\__,_|");
+      script.Print("Burning Your Device With Fire");
+      script.Print("Now Start Hounding Your Ass Up");
     else:
       script.Print("Patching %s image after verification." % (self.partition,))
 
