@@ -677,6 +677,26 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     script.ValidateSignatures("data")
     script.Unmount("/data")
     script.AppendExtra("endif;")
+    
+    script.Print("************************************************");
+    script.Print(" _____ _          _   _                       _ ");
+    script.Print("|  ___(_)_ __ ___| | | | ___  _   _ _ __   __| |");
+    script.Print("| |_  | | '__/ _ \ |_| |/ _ \| | | | '_ \ / _` |");
+    script.Print("|  _| | | | |  __/  _  | (_) | |_| | | | | (_| |");
+    script.Print("|_|   |_|_|  \___|_| |_|\___/ \__,_|_| |_|\__,_|");
+    script.Print("************************************************");
+    script.Print("Burning Your Device With Fire");
+    script.Print("Now Start Hounding Your Ass Up");
+
+    build = GetBuildProp("ro.build.date", OPTIONS.info_dict)
+    script.Print("******************************************");
+    script.Print("***** FIRE BURNS AND PHOENIX HOUNDS *****");
+    script.Print("******************************************");
+    script.Print("   Compiled On: %s"%(build));
+    device = GetBuildProp("ro.product.device", OPTIONS.info_dict)
+    model = GetBuildProp("ro.product.model", OPTIONS.info_dict)
+    script.Print("*   Compiled For: %s (%s)"%(model, device));
+    script.Print("******************************************"); 
 
   # Place a copy of file_contexts.bin into the OTA package which will be used
   # by the recovery program.
