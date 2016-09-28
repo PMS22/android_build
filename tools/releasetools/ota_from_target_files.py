@@ -689,9 +689,11 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     script.Print("Now Start Hounding Your Ass Up");
 
     build = GetBuildProp("ro.build.date", OPTIONS.info_dict)
+    device = GetBuildProp("ro.product.device", OPTIONS.info_dict)
     script.Print("******************************************");
     script.Print("***** FIRE BURNS AND PHOENIX HOUNDS *****");
     script.Print("******************************************");
+    script.Print("    Compiled For: %s "%(device)); 
     script.Print("   Compiled On: %s"%(build));
     script.Print("******************************************"); 
 
