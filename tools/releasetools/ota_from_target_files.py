@@ -693,9 +693,6 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     script.Print("***** FIRE BURNS AND PHOENIX HOUNDS *****");
     script.Print("******************************************");
     script.Print("   Compiled On: %s"%(build));
-    device = GetBuildProp("ro.product.device", OPTIONS.info_dict)
-    model = GetBuildProp("ro.product.model", OPTIONS.info_dict)
-    script.Print("*   Compiled For: %s (%s)"%(model, device));
     script.Print("******************************************"); 
 
   # Place a copy of file_contexts.bin into the OTA package which will be used
